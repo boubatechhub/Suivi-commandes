@@ -28,6 +28,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webmvc</artifactId>
         </dependency>
+        <!-- Validation des données reçues (@NotBlank, @Size, @PositiveOrZero...) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <!-- Documentation OpenAPI générée à partir du code + interface Swagger UI -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>3.2.0</version>
+        </dependency>
         <!-- Endpoint /actuator/health : vérifier que l'API et la base répondent -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -58,6 +69,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- MockMvc : appeler les contrôleurs dans les tests sans démarrer de serveur HTTP -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webmvc-test</artifactId>
             <scope>test</scope>
         </dependency>
         <!-- Tests d'intégration contre un vrai PostgreSQL lancé dans Docker -->

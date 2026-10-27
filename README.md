@@ -4,7 +4,7 @@ Application pédagogique full stack de gestion et de suivi des commandes en lign
 
 Ce n'est pas un simple CRUD : l'application applique des règles métier explicites (transitions de statut contrôlées, stock, délais), garde l'historique de chaque commande et signale les commandes en retard ou prioritaires.
 
-> État : **J1, fondations**. Aucune fonctionnalité métier n'est encore livrée. Voir la [feuille de route](docs/backlog.md).
+> État : **J2, API du catalogue produits**. Voir la [feuille de route](docs/backlog.md).
 
 ## Structure du dépôt
 
@@ -47,6 +47,8 @@ cd backend
 ```
 
 Vérification : <http://localhost:8080/actuator/health> doit répondre `{"status":"UP"}`.
+
+Documentation interactive de l'API : <http://localhost:8080/swagger-ui.html>. Des requêtes prêtes à lancer sont dans `backend/http/` (extension REST Client de VS Code ou IntelliJ).
 
 ### 3. Frontend
 
