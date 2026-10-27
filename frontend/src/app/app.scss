@@ -1,0 +1,34 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 calc(var(--space) * 1.5);
+  height: 56px;
+  background: var(--color-primary);
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav a {
+    opacity: 0.8;
+    padding-bottom: 4px;
+
+    &.active {
+      opacity: 1;
+      border-bottom: 2px solid var(--color-accent);
+    }
+  }
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: calc(var(--space) * 1.5);
+}

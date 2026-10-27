@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: suivi-commandes-api
+  # Les valeurs par défaut correspondent au docker-compose.yml de développement.
+  # En dehors du poste local, elles sont fournies par des variables d'environnement.
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/suivi_commandes}
+    username: ${DB_USERNAME:suivi}
+    password: ${DB_PASSWORD:suivi}
+  jpa:
+    # Hibernate vérifie que les entités correspondent au schéma, mais ne le modifie jamais :
+    # seules les migrations Flyway font évoluer la base.
+    hibernate:
+      ddl-auto: validate
+    # Évite de garder une connexion ouverte pendant le rendu de la réponse HTTP
+    open-in-view: false
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health

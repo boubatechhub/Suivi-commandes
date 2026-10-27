@@ -1,0 +1,32 @@
+// Charte graphique : les 4 couleurs de marque et leurs dérivés sont déclarés une seule fois ici,
+// sous forme de variables CSS, puis réutilisés partout avec var(--...).
+:root {
+  --color-primary: #1e3a5f; // bleu nuit : navigation, titres, boutons principaux
+  --color-secondary: #0f766e; // sarcelle : liens, éléments actifs
+  --color-accent: #f59e0b; // ambre : alertes et priorités, toujours avec un texte foncé
+  --color-neutral: #64748b; // ardoise : texte secondaire, bordures
+
+  --color-surface: #ffffff;
+  --color-background: #f1f5f9;
+  --color-text: #0f172a;
+  --color-error: #b91c1c; // exception à la charte, réservée aux erreurs
+
+  --radius: 8px;
+  --space: 1rem;
+  --font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+a {
+  color: var(--color-secondary);
+}
