@@ -11,6 +11,11 @@
     text-decoration: none;
   }
 
+  nav {
+    display: flex;
+    gap: 1.25rem;
+  }
+
   nav a {
     opacity: 0.8;
     padding-bottom: 4px;

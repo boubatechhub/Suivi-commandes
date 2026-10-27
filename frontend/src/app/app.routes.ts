@@ -8,5 +8,9 @@ export const routes: Routes = [
     title: 'Accueil | Suivi des commandes',
     loadComponent: () => import('./features/home/home').then((m) => m.Home),
   },
+  {
+    path: 'catalogue',
+    loadChildren: () => import('./features/catalog/catalog.routes').then((m) => m.CATALOG_ROUTES),
+  },
   { path: '**', redirectTo: '' },
 ];

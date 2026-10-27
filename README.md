@@ -4,7 +4,7 @@ Application pédagogique full stack de gestion et de suivi des commandes en lign
 
 Ce n'est pas un simple CRUD : l'application applique des règles métier explicites (transitions de statut contrôlées, stock, délais), garde l'historique de chaque commande et signale les commandes en retard ou prioritaires.
 
-> État : **J2, API du catalogue produits**. Voir la [feuille de route](docs/backlog.md).
+> État : **J3, écrans du catalogue produits** (<http://localhost:4200/catalogue>). Voir la [feuille de route](docs/backlog.md).
 
 ## Structure du dépôt
 

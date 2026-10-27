@@ -1,0 +1,88 @@
+<div class="page-header">
+  <h1>Catalogue</h1>
+  <a mat-flat-button routerLink="nouveau">
+    <mat-icon>add</mat-icon>
+    Nouveau produit
+  </a>
+</div>
+
+<form class="search" (ngSubmit)="search()">
+  <mat-form-field appearance="outline" subscriptSizing="dynamic">
+    <mat-label>Rechercher par SKU ou nom</mat-label>
+    <input matInput [formControl]="searchControl" />
+  </mat-form-field>
+  <button mat-stroked-button type="submit">Rechercher</button>
+</form>
+
+@let current = state();
+
+@if (current.status === 'loading') {
+  <mat-progress-bar mode="indeterminate" aria-label="Chargement du catalogue" />
+}
+
+@if (current.status === 'error') {
+  <div class="message error" role="alert">
+    {{ current.message }}
+    <button mat-button type="button" (click)="retry()">Réessayer</button>
+  </div>
+}
+
+@if (current.status === 'success') {
+  @if (current.data.content.length === 0) {
+    <p class="message empty">Aucun produit ne correspond à la recherche.</p>
+  } @else {
+    <div class="card table-wrapper">
+      <table mat-table [dataSource]="current.data.content">
+        <ng-container matColumnDef="sku">
+          <th mat-header-cell *matHeaderCellDef>SKU</th>
+          <td mat-cell *matCellDef="let product" class="nowrap">{{ product.sku }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Nom</th>
+          <td mat-cell *matCellDef="let product">{{ product.name }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="unitPrice">
+          <th mat-header-cell *matHeaderCellDef class="number">Prix</th>
+          <td mat-cell *matCellDef="let product" class="number">
+            {{ product.unitPrice | currency: 'EUR' }}
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="stockAvailable">
+          <th mat-header-cell *matHeaderCellDef class="number">Stock</th>
+          <td mat-cell *matCellDef="let product" class="number">{{ product.stockAvailable }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="active">
+          <th mat-header-cell *matHeaderCellDef>État</th>
+          <td mat-cell *matCellDef="let product">
+            <span class="badge" [class.inactive]="!product.active">
+              {{ product.active ? 'Actif' : 'Inactif' }}
+            </span>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef><span class="visually-hidden">Actions</span></th>
+          <td mat-cell *matCellDef="let product">
+            <a mat-button [routerLink]="[product.id]">Modifier</a>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
+
+    <mat-paginator
+      [length]="current.data.totalElements"
+      [pageIndex]="current.data.page"
+      [pageSize]="current.data.size"
+      [pageSizeOptions]="[10, 20, 50]"
+      (page)="changePage($event)"
+      aria-label="Pagination du catalogue"
+    />
+  }
+}
