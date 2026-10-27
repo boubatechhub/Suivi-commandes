@@ -1,44 +1,44 @@
-# Veille Angular
+# Veille technologique : Angular
 
-*Version Angular retenue : **22.2** (vérifiée le 27/10/2026). Chaque réponse est complétée le jour où la notion apparaît dans le projet.*
-
-> ⚠️ La liste ci-dessous est reconstituée à partir du sujet de la mission. Elle sera alignée sur l'énoncé exact de tes 29 questions dès que tu me l'auras transmis.
+*Version Angular retenue : **22.2** (vérifiée le 27/10/2026). Chaque réponse est complétée le jour où la notion apparaît dans le projet, avec : explication accessible, réponse technique, exemple, référence officielle, lien avec le projet, exercice et question de révision.*
 
 | # | Question | Jour | État |
 |---|---|---|---|
-| 1 | Qu'est-ce qu'Angular et quel est son rôle ? | J1 | ✅ |
-| 2 | Quelle version utilise-t-on et comment la choisir ? | J1 | ✅ |
-| 3 | Quels sont les avantages d'Angular ? | J1 | ✅ |
-| 4 | Qu'est-ce qu'Angular CLI ? | J1 | ✅ |
-| 5 | Quel est le rôle de Node.js ? | J1 | ✅ |
-| 6 | Comment créer un projet ? | J1 | ✅ |
-| 7 | Quelle est la structure d'un projet ? | J1 | ✅ |
-| 8 | Qu'est-ce qu'un composant ? | J3 | ⬜ |
-| 9 | Que contient un composant ? | J3 | ⬜ |
-| 10 | Qu'est-ce qu'une directive ? | J3 | ⬜ |
-| 11 | Quels sont les types de directives ? | J3 | ⬜ |
-| 12 | Quels sont les hooks du cycle de vie ? | J7 | ⬜ |
-| 13 | Qu'est-ce que le binding ? | J3 | ⬜ |
-| 14 | Quels sont les types de binding ? | J3 | ⬜ |
-| 15 | Comment les composants communiquent-ils ? | J7 | ⬜ |
-| 16 | À quoi servent `@Input` et `@Output` (et `input()` / `output()`) ? | J7 | ⬜ |
-| 17 | Qu'est-ce qu'un service ? | J3 | ⬜ |
-| 18 | Qu'est-ce que l'injection de dépendances ? | J3 | ⬜ |
-| 19 | Qu'est-ce qu'un provider et quelle est sa portée ? | J5 | ⬜ |
-| 20 | Qu'est-ce que le lazy loading ? | J4 | 🔄 (première utilisation au J1) |
-| 21 | Qu'est-ce qu'un Observable ? | J3 | ⬜ |
-| 22 | Qu'est-ce qu'une Promise ? | J3 | ⬜ |
-| 23 | Observable ou Promise : quelles différences ? | J3 | ⬜ |
-| 24 | Qu'est-ce que RxJS ? | J4 | ⬜ |
-| 25 | Quels sont les principaux opérateurs RxJS ? | J4 | ⬜ |
-| 26 | Comment faire un appel HTTP ? | J3 | ⬜ |
-| 27 | Quels types de formulaires existe-t-il ? | J3, J7 | ⬜ |
-| 28 | Qu'est-ce que Webpack et Angular l'utilise-t-il encore ? | J1 | ✅ |
-| 29 | Qu'est-ce qu'un type union en TypeScript ? | J8 | ⬜ |
+| 1 | Qu'est-ce qu'Angular et quel est son rôle dans le développement ? Quelle est sa dernière version ? | J1 | ✅ |
+| 2 | Quelles sont les principales caractéristiques et avantages d'Angular par rapport à d'autres frameworks JavaScript ? | J1 | ✅ |
+| 3 | C'est quoi un CLI Angular ? | J1 | ✅ |
+| 4 | C'est quoi Node ? Quelle est sa version actuelle ? | J1 | ✅ |
+| 5 | Quel est le lien entre Node et Angular ? | J1 | ✅ |
+| 6 | Comment créer un projet Angular ? | J1 | ✅ |
+| 7 | Expliquez à l'aide d'un schéma la structure d'une application Angular (le socle généré par Angular CLI). | J1 | ✅ |
+| 8 | Pouvez-vous expliquer brièvement le concept de composants et de directives dans Angular ? | J3 | ⬜ |
+| 9 | Les cycles de vie d'un composant. | J7 | ⬜ |
+| 10 | Expliquer le contenu d'un composant Angular. | J3 | ⬜ |
+| 11 | C'est quoi un Observable ? C'est quoi une Promise ? | J3 | ⬜ |
+| 12 | Différence entre un Observable et une Promise. | J3 | ⬜ |
+| 13 | Qu'est-ce que RxJS ? Donnez quelques opérateurs RxJS et leurs rôles. | J4 | ⬜ |
+| 14 | Comment relier une API possédant des endpoints à un projet Angular ? | J3 | ⬜ |
+| 15 | Décrire le mécanisme d'un appel HTTP en Angular. | J3 | ⬜ |
+| 16 | Qu'est-ce que le binding ? | J3 | ⬜ |
+| 17 | Citez et expliquez les différents types de binding. | J3 | ⬜ |
+| 18 | Quelle est la différence entre le binding unidirectionnel et bidirectionnel dans Angular ? | J3 | ⬜ |
+| 19 | Différents moyens d'échange de données entre composants en Angular. | J7 | ⬜ |
+| 20 | Expliquer ce que sont @Input et @Output et leurs utilisations. | J7 | ⬜ |
+| 21 | C'est quoi le lazy loading ? | J4 | 🔄 première utilisation au J1 |
+| 22 | C'est quoi un service en Angular ? | J3 | ⬜ |
+| 23 | C'est quoi un provider en Angular ? | J5 | ⬜ |
+| 24 | C'est quoi une directive ? | J3 | ⬜ |
+| 25 | C'est quoi un provider en Angular ? (doublon de la question 23) | J5 | ↪ voir 23 |
+| 26 | Pouvez-vous citer quelques balises structurelles couramment utilisées dans les templates Angular ? | J3 | ⬜ |
+| 27 | Citer les différentes méthodes d'implémentation d'un formulaire en Angular. | J3, J7 | ⬜ |
+| 28 | C'est quoi Webpack ? Il représente quoi pour Angular ? | J1 | ✅ |
+| 29 | Qu'est-ce qu'un « type union » en TypeScript et dans quelles situations est-il utilisé ? | J8 | ⬜ |
+
+> Les questions 23 et 25 sont identiques dans l'énoncé : la 25 renvoie à la 23. Les questions 8 et 24 se recouvrent : la 8 présente composants et directives ensemble, la 24 détaille les directives.
 
 ---
 
-## 1. Qu'est-ce qu'Angular et quel est son rôle ?
+## 1. Qu'est-ce qu'Angular et quel est son rôle dans le développement ? Quelle est sa dernière version ?
 
 **En clair** : Angular est un framework pour construire des applications web qui tournent dans le navigateur. Il fournit tout le nécessaire « clé en main » : composants, navigation, formulaires, appels HTTP, tests.
 
@@ -64,7 +64,7 @@ export class App {
 
 **Révision** : qu'est-ce qu'une SPA, et quel avantage pour l'utilisateur ?
 
-## 2. Quelle version utilise-t-on et comment la choisir ?
+### Dernière version
 
 **En clair** : on utilise **Angular 22.2**, la version stable actuelle. On ne prend jamais une version « next » (préversion) pour un projet.
 
@@ -93,7 +93,7 @@ npx ng version
 
 **Révision** : pourquoi TypeScript 7, pourtant sorti, n'est-il pas utilisable ici ?
 
-## 3. Quels sont les avantages d'Angular ?
+## 2. Quelles sont les principales caractéristiques et avantages d'Angular par rapport à d'autres frameworks JavaScript ?
 
 **En clair** : tout est fourni et cohérent, le typage évite beaucoup d'erreurs, et la structure imposée aide à garder un gros projet lisible.
 
@@ -108,6 +108,19 @@ npx ng version
 
 Limites : courbe d'apprentissage plus raide que des bibliothèques plus légères, et davantage de concepts à maîtriser au départ.
 
+Comparaison rapide :
+
+| | Angular | React | Vue |
+|---|---|---|---|
+| Nature | Framework complet | Bibliothèque d'interface | Framework progressif |
+| Langage | TypeScript imposé | JavaScript ou TypeScript (JSX) | JavaScript ou TypeScript |
+| Routeur, formulaires, HTTP | Fournis officiellement | Bibliothèques tierces au choix | Routeur officiel, le reste au choix |
+| Injection de dépendances | Intégrée | Absente (Context, hooks) | Simple (`provide`/`inject`) |
+| Réactivité | Signals + RxJS | Hooks (`useState`...) | Refs réactives |
+| Structure de projet | Très guidée par le CLI | Libre | Assez libre |
+
+Angular est donc bien adapté aux applications métier de taille moyenne à grande, avec plusieurs développeurs, où la cohérence prime sur la liberté.
+
 **Référence** : <https://angular.dev/overview>
 
 **Lien avec le projet** : les tests (`app.spec.ts`), le lint et le build fonctionnent dès la génération, sans configuration.
@@ -116,7 +129,7 @@ Limites : courbe d'apprentissage plus raide que des bibliothèques plus légère
 
 **Révision** : qu'apporte la compilation AOT au développeur ?
 
-## 4. Qu'est-ce qu'Angular CLI ?
+## 3. C'est quoi un CLI Angular ?
 
 **En clair** : la ligne de commande officielle qui crée, lance, teste et construit le projet à ta place.
 
@@ -144,23 +157,65 @@ Le CLI délègue le travail aux **builders** déclarés dans `angular.json` (ici
 
 **Révision** : pourquoi utiliser `npx ng` plutôt qu'un `ng` installé globalement ?
 
-## 5. Quel est le rôle de Node.js ?
+## 4. C'est quoi Node ? Quelle est sa version actuelle ?
+
+**En clair** : Node.js permet d'exécuter du JavaScript **en dehors du navigateur**, directement sur ton ordinateur ou sur un serveur.
+
+**Réponse technique** : environnement d'exécution JavaScript fondé sur le moteur V8 de Chrome, avec des API pour lire des fichiers, lancer des processus ou ouvrir des connexions réseau. Il est livré avec **npm**, le gestionnaire de paquets. Node publie une version paire **LTS** (support long) chaque année ; les versions impaires et les plus récentes sont « Current ».
+
+Versions au 27/10/2026 (source : nodejs.org) :
+
+| Ligne | Dernière version | Statut |
+|---|---|---|
+| 26 | 26.12.1 | Current (non LTS) |
+| **24** | **24.22.1** | **LTS active (Krypton)**, celle du projet |
+| 22 | 22.23.4 | LTS de maintenance (Jod) |
+
+**Exemple** :
+
+```powershell
+node -v    # v24.22.1
+npm -v
+```
+
+**Référence** : <https://nodejs.org/>
+
+**Lien avec le projet** : la CI installe Node 24 (`.github/workflows/ci.yml`) ; tu as Node 24.22.1 sur ton PC.
+
+**Exercice** : écris un fichier `bonjour.js` contenant `console.log('Bonjour depuis Node', process.version)` et lance-le avec `node bonjour.js`. Où s'exécute ce code ?
+
+**Révision** : pourquoi privilégier une version LTS pour un projet ?
+
+## 5. Quel est le lien entre Node et Angular ?
 
 **En clair** : Node.js fait tourner les **outils** sur ta machine (CLI, compilateur, tests). L'application Angular, elle, tourne dans le **navigateur**.
 
 **Réponse technique** : Node.js est un environnement d'exécution JavaScript hors navigateur. Il est indispensable pour npm, le CLI, le compilateur TypeScript, esbuild, Vite et Vitest. Une fois construite, l'application n'est qu'un ensemble de fichiers statiques (HTML, JS, CSS) : aucun Node.js n'est nécessaire pour la servir, sauf en rendu côté serveur (SSR), non utilisé ici.
 
-**Exemple** : `node -v` doit afficher v24.x (au moins 24.15.0).
+```mermaid
+flowchart LR
+    subgraph PC["Ton PC : Node.js"]
+        NPM[npm install] --> CLI["ng serve / ng build"]
+        CLI --> TSC["Compilateur Angular + TypeScript"]
+        TSC --> ESB["esbuild : bundle JS/CSS"]
+    end
+    ESB --> DIST["Fichiers statiques<br/>index.html, main-xxx.js, styles-xxx.css"]
+    DIST --> NAV["Navigateur : exécute l'application"]
+```
+
+Chaque version d'Angular exige une plage de versions de Node précise. Angular 22 exige `^22.22.3 || ^24.15.0 || >=26.0.0` : c'est pourquoi ta version 22.17 devait être mise à jour.
+
+**Exemple** : `npm start` lance Node, qui exécute le CLI, qui lance le serveur de développement Vite sur <http://localhost:4200>.
 
 **Référence** : <https://nodejs.org/>, <https://angular.dev/reference/versions>
 
-**Lien avec le projet** : la CI installe Node 24 (`.github/workflows/ci.yml`).
+**Lien avec le projet** : `"start": "ng serve"` dans `frontend/package.json`.
 
 **Exercice** : après `npm run build`, ouvre `frontend/dist/suivi-commandes-web/browser/` et identifie les fichiers qui iront dans le navigateur.
 
 **Révision** : Node.js est-il nécessaire sur le serveur qui héberge l'application construite ? Pourquoi ?
 
-## 6. Comment créer un projet ?
+## 6. Comment créer un projet Angular ?
 
 **En clair** : une seule commande crée un projet complet, prêt à lancer et à tester.
 
@@ -188,9 +243,44 @@ Valeurs par défaut constatées en v22 : composants standalone, **Vitest**, **pa
 
 **Révision** : que signifie « zoneless » ?
 
-## 7. Quelle est la structure d'un projet ?
+## 7. Expliquez à l'aide d'un schéma la structure d'une application Angular (le socle généré par Angular CLI).
 
 **En clair** : la configuration est à la racine de `frontend/`, le code dans `src/app/`.
+
+**Schéma du démarrage** :
+
+```mermaid
+flowchart TD
+    HTML["src/index.html<br/>contient &lt;app-root&gt;"] --> MAIN["src/main.ts<br/>bootstrapApplication(App, appConfig)"]
+    MAIN --> CONF["src/app/app.config.ts<br/>providers globaux : routeur..."]
+    MAIN --> APP["src/app/app.ts + app.html + app.scss<br/>composant racine (sélecteur app-root)"]
+    CONF --> ROUTES["src/app/app.routes.ts<br/>table des routes"]
+    APP --> OUTLET["&lt;router-outlet&gt;"]
+    ROUTES -->|"chargement à la demande"| PAGE["features/home/home.ts<br/>page affichée dans l'outlet"]
+    OUTLET -.-> PAGE
+```
+
+**Schéma des fichiers** :
+
+```
+frontend/
+├── angular.json         configuration du CLI et des builders
+├── package.json         dépendances et scripts npm
+├── tsconfig.json        options TypeScript communes
+├── public/              fichiers statiques (favicon)
+└── src/
+    ├── index.html       page unique
+    ├── main.ts          point d'entrée
+    ├── styles.scss      styles globaux
+    └── app/
+        ├── app.ts       composant racine (classe)
+        ├── app.html     son template
+        ├── app.scss     ses styles
+        ├── app.spec.ts  ses tests
+        ├── app.config.ts
+        ├── app.routes.ts
+        └── features/    pages par fonctionnalité (ajouté par nous)
+```
 
 **Réponse technique** :
 
@@ -215,7 +305,7 @@ Valeurs par défaut constatées en v22 : composants standalone, **Vitest**, **pa
 
 **Révision** : pourquoi commiter `package-lock.json` ?
 
-## 28. Qu'est-ce que Webpack et Angular l'utilise-t-il encore ?
+## 28. C'est quoi Webpack ? Il représente quoi pour Angular ?
 
 **En clair** : Webpack est un outil qui regroupe des centaines de fichiers en quelques fichiers optimisés. Angular l'a utilisé pendant des années, mais **ce projet ne l'utilise pas**.
 

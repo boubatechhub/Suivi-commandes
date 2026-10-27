@@ -24,3 +24,4 @@ Alertes planifiées, notifications temps réel (SSE), simulation « et si ? », 
 | Date | Événement |
 |---|---|
 | 27/10/2026 | Cadrage validé, dépôt créé, J1 démarré |
+| 27/10/2026 | Veille Angular alignée sur les 29 questions officielles |
