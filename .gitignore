@@ -1,0 +1,11 @@
+# Secrets locaux
+.env
+
+# Backend (Maven)
+backend/target/
+
+# IDE et système
+.idea/
+*.iml
+.DS_Store
+Thumbs.db

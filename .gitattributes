@@ -1,0 +1,6 @@
+# Fins de ligne normalisées (important sous Windows)
+* text=auto
+# Les scripts shell doivent garder des fins de ligne Unix, sinon ils échouent dans Docker et en CI
+*.sh text eol=lf
+mvnw text eol=lf
+*.cmd text eol=crlf
