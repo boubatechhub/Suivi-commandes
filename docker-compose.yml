@@ -1,0 +1,22 @@
+# Base de données de développement : PostgreSQL 18 dans un conteneur.
+# Démarrage : docker compose up -d   ·   Arrêt : docker compose down
+services:
+  postgres:
+    image: postgres:18
+    container_name: suivi-commandes-db
+    environment:
+      POSTGRES_DB: ${DB_NAME:-suivi_commandes}
+      POSTGRES_USER: ${DB_USERNAME:-suivi}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-suivi}
+    ports:
+      - "5432:5432"
+    volumes:
+      # Depuis PostgreSQL 18, l'image officielle stocke ses données sous /var/lib/postgresql
+      - pgdata:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      retries: 10
+
+volumes:
+  pgdata:
