@@ -1,0 +1,37 @@
+### Requêtes à lancer depuis VS Code (extension REST Client) ou IntelliJ : l'API doit tourner sur le port 8080.
+
+### Créer un produit
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "sku": "tasse-01",
+  "name": "Tasse en grès",
+  "description": "Faite main, 30 cl",
+  "unitPrice": 12.50,
+  "stockAvailable": 40
+}
+
+### Rechercher (pagination et tri)
+GET http://localhost:8080/api/products?q=tasse&page=0&size=10&sort=unitPrice,desc
+
+### Consulter un produit
+GET http://localhost:8080/api/products/1
+
+### Modifier (le SKU doit rester identique)
+PUT http://localhost:8080/api/products/1
+Content-Type: application/json
+
+{
+  "sku": "TASSE-01",
+  "name": "Tasse en grès émaillé",
+  "unitPrice": 13.90,
+  "stockAvailable": 35,
+  "active": true
+}
+
+### Erreur de validation attendue (400)
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{ "sku": "avec espace", "name": "", "unitPrice": -1, "stockAvailable": 1 }
